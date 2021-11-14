@@ -1,0 +1,5 @@
+﻿Build started...
+1>------ Build started: Project: MovieGalore, Configuration: Debug Any CPU ------
+1>MovieGalore -> C:\Users\gsida\Desktop\Repo\MovieGalore\bin\Debug\net5.0\MovieGalore.dll
+1>MovieGalore -> C:\Users\gsida\Desktop\Repo\MovieGalore\bin\Debug\net5.0\MovieGalore.Views.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

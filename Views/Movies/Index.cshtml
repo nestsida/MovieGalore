@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Movies>
+
+<h2>Products</h2>
+<div style="display: block">
+    <a href="/Movies/InsertMovie/">Create a New Movie</a>
+</div>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Release Date</th>
+        <th>Price</th>
+        <th>Rating</th>
+
+    </tr>
+
+    @foreach (var movie in Model)
+    {
+        <tr>
+            <td><a href=/Movie/ViewMovie/@movie.ID>@movie.ID</a></td>
+
+            <td>@movie.Name</td>
+            <td>@movie.ReleaseDate</td>
+            <td>@movie.Price</td>
+            <td>@movie.Rating</td>
+
+        </tr>
+
+    }
+</table>
+
+
+</table>
