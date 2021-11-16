@@ -20,11 +20,11 @@ namespace MovieGalore
 
         public IEnumerable<Movies> GetMovies()
         {
-            return _conn.Query<Movies>("Select * from new_movies;") ;
+            return _conn.Query<Movies>("Select * from new_movies.new_movies;") ;
         }
         public Movies GetMovies(int id)
         {
-            return _conn.QuerySingle<Movies>("SELECT * FROM new_movies WHERE ID = @id",
+            return _conn.QuerySingle<Movies>("SELECT * FROM new_movies.new_movies WHERE ID = @id",
                 new { id = id });
         }
         public void UpdateMovies(Movies movie)

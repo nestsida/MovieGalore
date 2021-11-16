@@ -27,7 +27,7 @@ namespace MovieGalore
         {
             services.AddScoped<IDbConnection>((s) =>
             {
-                IDbConnection conn = new MySqlConnection(Configuration.GetConnectionString("azure"));
+                IDbConnection conn = new MySqlConnection(Configuration.GetConnectionString("bestbuy"));
                 conn.Open();
                 return conn;
             });
